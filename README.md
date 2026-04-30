@@ -87,7 +87,6 @@ Then:
 Edit constants at the top of each script:
 
 - `TIMEOUT_SECONDS`: Selenium wait timeout
-- `HEADLESS`: Set to `True` to run without showing browser window (not recommended for login)
 - `INTER_DELAY_SECONDS`: Delay between user removals (adds script more gracefully to server)
 
 ## License

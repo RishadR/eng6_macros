@@ -32,7 +32,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 DEFAULT_URL = "https://www.mathworks.com/licensecenter/licenses/41012247/8966129/end_users"
 TIMEOUT_SECONDS = 20
-HEADLESS = False
 RETRIES = 3
 INTER_DELAY_SECONDS = 0.5
 MIN_JITTER_SECONDS = 0.05
@@ -56,8 +55,6 @@ class ThingSpeakRemover:
 		self.inter_delay = INTER_DELAY_SECONDS
 
 		options = webdriver.ChromeOptions()
-		if HEADLESS:
-			options.add_argument("--headless=new")
 		options.add_argument("--start-maximized")
 		options.add_argument("--disable-notifications")
 		options.add_argument("--disable-popup-blocking")
